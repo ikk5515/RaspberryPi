@@ -26,12 +26,12 @@ def interrupt_fired(channel):
         # address, ID, PW
         client = influxdb('localhost',8086,'root','root','pir')
     except Exception as e:
-        print "Exception" + str(e)
+        print("Exception" + str(e))
     if client is not None:
         try:
             client.write_points(data)
         except Exception as e:
-            print "Exception write " + str(e)
+            print("Exception write " + str(e))
         finally:
             client.close()
     print(a)
@@ -53,12 +53,12 @@ while(True):
     try:
         client = influxdb('localhost',8086,'root','root','pir')
     except Exception as e:
-        print "Exception" + str(e)
+        print("Exception" + str(e))
     if client is not None:
         try:
             client.write_points(data)
         except Exception as e:
-            print "Exception write " + str(e)
+            print("Exception write " + str(e))
         finally:
             client.close()
     print("running influxdb OK")
