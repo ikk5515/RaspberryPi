@@ -12,6 +12,7 @@ def interrupt_fired(channel):
     print("interrupt Fired")
     a = 5
     data = [{
+        # database 이름
         'measurement' : 'pir',        
         'tags':{
             'VisionUni' : '2410',
@@ -22,6 +23,7 @@ def interrupt_fired(channel):
     }]
     client = None
     try:
+        # address, ID, PW
         client = influxdb('localhost',8086,'root','root','pir')
     except Exception as e:
         print "Exception" + str(e)
