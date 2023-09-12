@@ -83,3 +83,5 @@
   * influxdb import with python
 
         sudo pip3 install influxdb
+
+  * python pir_influx.py 실행시 running influxdb OK라 표시되면 DB에 저장중인 상태
