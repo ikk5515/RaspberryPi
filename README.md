@@ -85,3 +85,28 @@
         sudo pip3 install influxdb
 
   * python pir_influx.py 실행시 running influxdb OK라 표시되면 DB에 저장중인 상태
+
+
+# Grafana Installation
+
+<h4>1. Repository의 GPG key를 더하기</h4>
+
+      wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+
+<h4>2. Repository를 더하기</h4>
+
+      echo "deb https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+<h4>3. 프로그램 설치</h4>
+
+      sudo apt update
+      sudo apt install grafana
+
+<h4>4. 프로그램 실행</h4>
+
+      sudo service grafana-server start
+
+<h4>influxdb import with python</h4>
+
+      sudo pip3 install influxdb
+      
