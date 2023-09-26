@@ -109,4 +109,18 @@
 <h4>influxdb import with python</h4>
 
       sudo pip3 install influxdb
-      
+
+
+# 라즈베리파이 카메라 이용
+
+<h4>카메라 설정</h4>
+
+* Interface Options
+
+  * Legacy Camera -> Enable
+
+<h4>카메라 이용 (기본 촬영)</h4>
+  
+    raspistill –o 파일명.jpg 
+
+    libcamera-still –o 파일명.jpg 
