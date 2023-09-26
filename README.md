@@ -150,3 +150,7 @@
 <h4>picamera2 테스트 촬영</h4>
 
   * Picam.py파일을 통해 테스트 촬영
+
+<h4>python-telegram-bot[job-queue] 설치</h4>
+
+    pip install python-telegram-bot[job-queue]
