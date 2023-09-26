@@ -117,7 +117,7 @@
 
 * Interface Options
 
-  * Legacy Camera -> Enable
+  * Legacy Camera -> Disable
 
 <h4>카메라 이용 (기본 촬영)</h4>
   
@@ -128,3 +128,25 @@
 <h4>카메라 이용 (계속 보기)</h4>
 
     libcamera-hello -t 0
+
+# 라즈베리파이 + Telegram 연동하기
+
+<h4>라즈베리파이 Telegram API 설치</h4>
+
+    pip3 install python-telegram-bot --upgrade
+    
+<h4>git 설치</h4>
+
+    sudo apt-get install git
+
+<h4>라즈베리파이 Telegram API 사용</h4>
+ 
+     git colne https://github.com/python-telegram-bot/python-telegram-bot --recursive
+
+<h4>picamera 설치</h4>
+
+    pip3 install picamera
+
+<h4>picamera2 테스트 촬영</h4>
+
+  * Picam.py파일을 통해 테스트 촬영
