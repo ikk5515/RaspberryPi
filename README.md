@@ -124,3 +124,7 @@
     raspistill –o 파일명.jpg 
 
     libcamera-still –o 파일명.jpg 
+
+<h4>카메라 이용 (계속 보기)</h4>
+
+    libcamera-hello -t 0
